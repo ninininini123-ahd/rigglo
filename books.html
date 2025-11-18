@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книги - Книжный магазин "Читай-Город"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Книжный магазин</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="books.html" class="active">Книги</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">Наши книги</h1>
+            <div class="books-page">
+                <aside class="filters">
+                    <h3>Фильтры</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Жанр</h4>
+                        <div class="filter-option">
+                            <label>
+                                <input type="checkbox" name="genre" value="fiction"> Художественная литература
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <label>
+                                <input type="checkbox" name="genre" value="nonfiction"> Нехудожественная литература
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <label>
+                                <input type="checkbox" name="genre" value="fantasy"> Фэнтези
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <label>
+                                <input type="checkbox" name="genre" value="scifi"> Научная фантастика
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <label>
+                                <input type="checkbox" name="genre" value="detective"> Детективы
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Цена</h4>
+                        <div class="filter-option">
+                            <label>
+                                <input type="radio" name="price" value="0-500"> до 500 руб.
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <label>
+                                <input type="radio" name="price" value="500-1000"> 500 - 1000 руб.
+                            </label>
+                        </div>
+                        <div class="filter-option">
+                            <label>
+                                <input type="radio" name="price" value="1000+"> свыше 1000 руб.
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button class="btn" style="width: 100%;">Применить фильтры</button>
+                </aside>
+                
+                <div class="books-grid">
+                    <!-- Книга 1 -->
+                    <div class="book-card">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Обложка книги" class="book-image">
+                        <div class="book-info">
+                            <div class="book-title">Война и мир</div>
+                            <div class="book-author">Лев Толстой</div>
+                            <div class="book-price">950 руб.</div>
+                            <a href="#" class="btn" style="margin-top: 10px; display: inline-block;">В корзину</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Книга 2 -->
+                    <div class="book-card">
+                        <img src="https://images.unsplash.com/photo-1531901599638-a89bb60971a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Обложка книги" class="book-image">
+                        <div class="book-info">
+                            <div class="book-title">Гарри Поттер и философский камень</div>
+                            <div class="book-author">Дж. К. Роулинг</div>
+                            <div class="book-price">890 руб.</div>
+                            <a href="#" class="btn" style="margin-top: 10px; display: inline-block;">В корзину</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Книга 3 -->
+                    <div class="book-card">
+                        <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Обложка книги" class="book-image">
+                        <div class="book-info">
+                            <div class="book-title">Анна Каренина</div>
+                            <div class="book-author">Лев Толстой</div>
+                            <div class="book-price">820 руб.</div>
+                            <a href="#" class="btn" style="margin-top: 10px; display: inline-block;">В корзину</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Книга 4 -->
+                    <div class="book-card">
+                        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Обложка книги" class="book-image">
+                        <div class="book-info">
+                            <div class="book-title">Убить пересмешника</div>
+                            <div class="book-author">Харпер Ли</div>
+                            <div class="book-price">780 руб.</div>
+                            <a href="#" class="btn" style="margin-top: 10px; display: inline-block;">В корзину</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Книга 5 -->
+                    <div class="book-card">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Обложка книги" class="book-image">
+                        <div class="book-info">
+                            <div class="book-title">Властелин колец</div>
+                            <div class="book-author">Дж. Р. Р. Толкин</div>
+                            <div class="book-price">1200 руб.</div>
+                            <a href="#" class="btn" style="margin-top: 10px; display: inline-block;">В корзину</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Книга 6 -->
+                    <div class="book-card">
+                        <img src="https://images.unsplash.com/photo-1588666309990-d68f08e3d4a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Обложка книги" class="book-image">
+                        <div class="book-info">
+                            <div class="book-title">Гордость и предубеждение</div>
+                            <div class="book-author">Джейн Остин</div>
+                            <div class="book-price">750 руб.</div>
+                            <a href="#" class="btn" style="margin-top: 10px; display: inline-block;">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Книжный магазин "Читай-Город". Все права защищены.</p>
+            <p>Телефон: +7 988 341 67 74 | Email: hzkto5442@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
