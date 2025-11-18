@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Книжный магазин "Читай-Город"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Книжный магазин</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="books.html">Книги</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">Контакты</h1>
+            
+            <div class="contact-info">
+                <h2>Наши контактные данные</h2>
+                <div class="contact-details">
+                    <p><strong>Адрес:</strong> г. Москва, ул. Книжная, д. 15</p>
+                    <p><strong>Телефон:</strong> +7 988 341 67 74</p>
+                    <p><strong>Email:</strong> hzkto5442@gmail.com</p>
+                    <p><strong>Режим работы:</strong> Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-20:00</p>
+                </div>
+                
+                <h2>Форма обратной связи</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+            
+            <div class="seller-info">
+                <h2>Информация о продавце</h2>
+                <p><strong>Название компании:</strong> ООО "Книжный мир"</p>
+                <p><strong>ИНН:</strong> 1234567890</p>
+                <p><strong>ОГРН:</strong> 1234567890123</p>
+                <p><strong>Юридический адрес:</strong> г. Москва, ул. Книжная, д. 15</p>
+                <p><strong>Генеральный директор:</strong> Иванов Иван Иванович</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Книжный магазин "Читай-Город". Все права защищены.</p>
+            <p>Телефон: +7 988 341 67 74 | Email: hzkto5442@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // Обработка формы обратной связи
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.querySelector('.contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
